@@ -1,0 +1,14 @@
+{{#> designerLayout }}
+  {{#*inline "content"}}
+    {{#forEach categories}}
+      {{#> category}}
+      {{/ category}}
+    {{/forEach}}
+    {{#if sensor_stats}}
+      {{#> sensor_stat}}{{/sensor_stat}}
+    {{/if}}
+    {{#if markdown}}
+      {{#> markdownblock}}{{/markdownblock}}
+    {{/if}}
+  {{/inline}}
+{{/designerLayout}}

@@ -1,0 +1,89 @@
+@import 'settings';
+@import '../../../node_modules/foundation-emails/scss/foundation-emails';
+@import "../../../node_modules/bootstrap/scss/functions";
+@import "./_variables";
+@import "../../../node_modules/bootstrap/scss/mixins";
+@import "../../../node_modules/bootstrap/scss/tables";
+
+@import 'template/template';
+
+
+
+
+.body {
+  background-color: #f0f0f0 !important;
+}
+
+.Category {
+  .Category-description {
+    margin: 3px 10px 3px 10px;
+  }
+  .callout {
+    padding: 0 !important;
+  }
+}
+
+
+
+.Section {
+  .Section-header {
+    table.callout {
+      margin-bottom: 0 !important;
+    }
+  }
+  .Section-tablesList {
+    background: #fafafa;
+  }
+  .Section-table {
+  }
+
+  .p-b-small {
+    padding-bottom: 4px;
+    margin-bottom: 0 !important;
+  }
+}
+.bg-warning {
+  background-color: lightgoldenrodyellow !important;
+  color: black !important;
+}
+.Table-Wrapper {
+  border: 2px blue solid;
+  border-color: green;
+  border: 3px;
+}
+td.longWordsWrap {
+  word-break:break-all;
+  padding: 20px;
+}
+.nowrap {
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  -ms-word-break: break-all;
+  word-break: break-all;
+  -ms-hyphens: auto;
+  -moz-hyphens: auto;
+  -webkit-hyphens: auto;
+  hyphens: auto;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+
+.p-small {
+  padding: 5px !important;
+}
+.m-b-small {
+  margin-bottom: 5px !important;
+}
+
+.Category {
+  & > .callout {
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+}
+
+// s- is prefix since this is utility class. we just prefix all own utility classes with s-
+.s-light-border {
+  border: 1px solid #adadad !important;
+}

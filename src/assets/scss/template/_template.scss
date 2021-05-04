@@ -1,0 +1,80 @@
+// These are the styles to make some of the templates look extra nice.
+// Feel free to remove these styles for production!
+
+// Body Styles
+$chambray: #3A539B;
+$pictonblue: #22A7F0;
+body,
+html,
+.body {
+  background: #f3f3f3 !important;
+}
+
+.container.header {
+  background: #f3f3f3;
+}
+
+.body-drip {
+  border-top: 8px solid #663399;
+}
+
+// Full Width Headers
+.header {
+  background: $chambray;
+}
+
+.header .columns {
+  padding-bottom: 0;
+}
+
+.header p {
+  color: #fff;
+  padding-top: 15px;
+}
+
+.header .wrapper-inner {
+  padding: 20px;
+}
+
+.header .container {
+  background: transparent;
+}
+
+// Social Media
+table.button.facebook table td {
+  background: #3B5998 !important;
+  border-color: #3B5998;
+}
+
+table.button.twitter table td {
+  background: #1daced !important;
+  border-color: #1daced;
+}
+
+table.button.google table td {
+  background: #DB4A39 !important;
+  border-color: #DB4A39;
+}
+
+.wrapper.secondary {
+  background: #f3f3f3;
+}
+
+.text-chambray {
+  color: $chambray;
+}
+.bg-chamray {
+  background-color: $chambray;
+}
+.text-pictonblue {
+  color: $pictonblue;
+}
+.bg-pictonblue {
+  background-color: $pictonblue;
+}
+.bg-lightblue {
+  background-color: rgba(34, 167, 240, 0.1) !important;
+}
+.ibg_orange {
+  background: blue;
+}

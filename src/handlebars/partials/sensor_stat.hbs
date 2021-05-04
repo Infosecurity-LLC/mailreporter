@@ -1,0 +1,69 @@
+<tr>
+  <td>
+    <table
+      align="center"
+      width="590"
+      border="0"
+      cellpadding="0"
+      cellspacing="0"
+      style="background:#ffffff;"
+    >
+      <tr>
+        <td>
+          <table
+            align="center"
+            width="590"
+            border="0"
+            cellpadding="0"
+            cellspacing="0"
+          >
+
+            <tr>
+              <td
+                valign="top"
+                cellpadding="0"
+                cellspacing="0"
+                border="0"
+                height="30"
+                width="15"
+                style="background:#3b539d; padding: 0px; margin:0px; text-align:left; font-family:Verdana, Geneva, sans-serif; font-size:14px;  line-height:21px;"
+              >
+
+              </td>
+              <td
+                valign="top"
+                cellpadding="0"
+                cellspacing="0"
+                border="0"
+                width="10"
+                style=" padding: 0px; margin:0px; text-align:left; font-family:Verdana, Geneva, sans-serif; font-size:14px;  line-height:21px;"
+              >
+
+              </td>
+
+
+              <td
+                valign="middle"
+                width="560"
+                style="text-align:left; font-family:Verdana, Geneva, sans-serif; font-size:14px; line-height:21px; color:#3b539d;"
+              >
+                <span><b>Статистика:</b></span>
+              </td>
+
+            </tr>
+            {{#> septr10}}{{/septr10}}
+
+          </table>
+        </td>
+      </tr>
+    </table>
+  </td>
+
+</tr>
+
+{{#forEach sensor_stats}}
+  {{#> sensor_report}}
+  {{/ sensor_report}}
+{{/forEach}}
+</div>
+

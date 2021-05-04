@@ -1,0 +1,13 @@
+{{#> designerLayout }}
+
+  {{#*inline "content"}}
+    {{#forEach categories}}
+      {{#> category}}
+      {{/ category}}
+    {{/forEach}}
+    {{#if markdown}}
+      {{#> markdownblock}}{{/markdownblock}}
+    {{/if}}
+  {{/inline}}
+
+{{/designerLayout}}

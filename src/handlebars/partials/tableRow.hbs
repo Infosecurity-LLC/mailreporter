@@ -1,0 +1,39 @@
+{{#if mkd}}
+  <tr>
+
+    <td
+      colspan="2"
+      valign="top"
+      width="170"
+      style=" border: 1px solid #ececec; padding: 5px 0 5px 5px; text-align:left; font-family:Verdana, Geneva, sans-serif; font-size:14px;  line-height:21px;"
+    >
+      <span>{{{markd mkd}}}</span>
+    </td>
+
+  </tr>
+{{else}}
+  {{#if right}}
+    <tr>
+
+      <td
+        valign="top"
+        width="170"
+        style=" border: 1px solid #ececec; padding: 5px 0 5px 5px; text-align:left; font-family:Verdana, Geneva, sans-serif; font-size:14px;  line-height:21px;"
+      >
+        <span>{{left}}</span></td>
+      <td
+        valign="top"
+        style="border: 1px solid #ececec; padding: 5px 0 5px 5px; text-align:left; font-family:Verdana, Geneva, sans-serif; font-size:14px;  line-height:21px;"
+      >
+        <span>{{right}}</span>
+
+      </td>
+
+    </tr>
+
+  {{/if}}
+{{/if}}
+
+
+
+

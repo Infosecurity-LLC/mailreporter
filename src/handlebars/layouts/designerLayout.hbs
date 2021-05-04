@@ -1,0 +1,330 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta
+    http-equiv="Content-Type"
+    content="text/html; charset=utf-8"
+  />
+  <title>InfoSecurity</title>
+
+</head>
+
+<body>
+
+
+<table
+  width="620"
+  border="0"
+  bordercolor="#d8d8d8"
+  align="center"
+  cellpadding="0"
+  cellspacing="0"
+  style="background-color:#e6e6e6; color:#333333;"
+>
+  <tr>
+    <td
+      valign="middle"
+      height="15"
+      style="text-align:right; font-family:Verdana, Geneva, sans-serif; color:#999; font-size:11px; line-height:21px;"
+    >
+
+    </td>
+  </tr>
+  <!-- Header-->
+  <tr>
+    <td
+      valign="top"
+      style="text-align:right; font-family:Verdana, Geneva, sans-serif; color:#999; font-size:11px; line-height:21px;"
+    >
+      <table
+        align="center"
+        width="90%"
+        border="0"
+        cellpadding="0"
+        cellspacing="0"
+        style="background:#ffffff;"
+      >
+
+        <tr>
+          <td>
+            <table
+              align="center"
+              width="590"
+              border="0"
+              cellpadding="0"
+              cellspacing="0"
+              style="background-color:#3b539d;"
+            >
+
+              <tr>
+
+                <td
+                  valign="middle"
+                  height="50"
+                  style="text-align:center; font-family:Verdana, Geneva, sans-serif; color:#616163; font-size:14px; line-height:21px;color:#ffffff;"
+                ><span>
+                  <b>
+                    {{#if title}}
+                      {{title}}
+                    {{else}}
+                    Обнаружен инцидент
+                    {{/if}}
+                  </b>
+                </span>
+                </td>
+
+              </tr>
+
+            </table>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+  {{#if severity}}
+    <!--severity-->
+    <tr>
+      <td>
+        <table
+          align="center"
+          width="590"
+          border="0"
+          cellpadding="0"
+          cellspacing="0"
+          style="background:#ffffff;"
+        >
+          <tr>
+            <td style="padding: 0px;  text-align:left; font-family:Verdana, Geneva, sans-serif; font-size:14px;  line-height:21px; border-bottom:1px solid #3b539d;">
+              <table
+                align="center"
+                width="590"
+                height="50"
+                border="0"
+                cellpadding="0"
+                cellspacing="0"
+                style="background:#ffffff;"
+              >
+
+                <tr>
+                  <td
+                    valign="top"
+                    cellpadding="0"
+                    cellspacing="0"
+                    border="0"
+                    width="25"
+                    style=" padding: 0px; margin:0px; text-align:left; font-family:Verdana, Geneva, sans-serif; font-size:14px;  line-height:21px;"
+                  >
+
+                  </td>
+                  <td
+                    valign="middle"
+                    width="314"
+                    height="50"
+                    border="0"
+                    style="padding: 0px; text-align:left; font-family:Verdana, Geneva, sans-serif; font-size:14px;  line-height:21px; "
+                  >
+
+<span>Важность:
+  {{#compare severity "===" 1}}
+    низкая
+  {{/compare}}
+  {{#compare severity "===" 2}}
+    средняя
+  {{/compare}}
+  {{#compare severity "===" 3}}
+    высокая
+  {{/compare}}
+</span>
+
+
+                  </td>
+
+                  <td
+                    width="251"
+                    border="0"
+                    style="padding: 0px; text-align:right; font-family:Verdana, Geneva, sans-serif; font-size:11px;  line-height:21px; "
+                  >
+
+                      <img
+                        src="{{url}}s{{severity}}.jpg"
+                        border="0"
+                        width="251"
+                      />
+
+                  </td>
+
+                </tr>
+              </table>
+            </td>
+          </tr>
+
+        </table>
+
+
+      </td>
+
+    </tr>
+  {{/if}}
+
+  <!--separator-->
+  <tr>
+    <td>
+      <table
+        align="center"
+        width="590"
+        border="0"
+        cellpadding="0"
+        cellspacing="0"
+        style="background:#ffffff;"
+      >
+        <tr>
+          <td>
+            <table
+              align="center"
+              width="590"
+              border="0"
+              cellpadding="0"
+              cellspacing="0"
+            >
+
+              <tr>
+                <td
+                  valign="top"
+                  height="20"
+                  style="text-align:left; font-family:Segoe, 'Segoe UI', 'DejaVu Sans', 'Trebuchet MS', Verdana, sans-serif; font-size:16px;  line-height:21px;"
+                ></td>
+              </tr>
+
+
+            </table>
+          </td>
+        </tr>
+      </table>
+    </td>
+
+  </tr>
+  {{#> content}}
+  {{/content}}
+
+
+
+  <!--footer-->
+  <tr>
+    <td>
+      <table
+        align="center"
+        width="590"
+        border="0"
+        cellpadding="0"
+        cellspacing="0"
+        style="background:#e6e6e6;"
+      >
+        <tr>
+          <td width="590">
+            <table
+              align="center"
+              width="590"
+              border="0"
+              cellpadding="0"
+              cellspacing="0"
+            >
+
+              <tr>
+
+                <td
+                  align="left"
+                  valign="middle"
+                  style=" padding:25px 0 25px 25px; text-align:left;  font-family:Verdana, Geneva, sans-serif; font-size:12px; line-height:21px; color:#4c4c4c;"
+                >
+ <span style=" border:0; text-decoration:none;">
+Мониторинг инцидентов ИБ 24х7<br/>
+SOC Infosecurity
+ </span></td>
+                <td
+                  align="right"
+                  valign="middle"
+                  style=" padding:25px 25px 25px 0; text-align:right;  font-family:Verdana, Geneva, sans-serif; font-size:12px; line-height:21px; color:#4c4c4c;"
+                >
+ <span style=" border:0; text-decoration:none;">
+ +7 (499) 677-10-00<br/>
+<a
+  href="mailto:sales@in4security.com"
+  style="color:#4c4c4c; text-decoration:none;"
+>sales@in4security.com</a>
+ </span></td>
+
+              </tr>
+
+            </table>
+          </td>
+        </tr>
+      </table>
+    </td>
+
+  </tr>
+  <tr>
+    <td>
+      <table
+        align="center"
+        width="590"
+        border="0"
+        cellpadding="0"
+        cellspacing="0"
+        style=" color:#000000;background:#ffffff;"
+      >
+        <tr>
+          <td>
+            <table
+              align="center"
+              width="92%"
+              border="0"
+              cellpadding="0"
+              cellspacing="0"
+            >
+
+
+              <tr>
+
+                <td
+                  valign="top"
+                  style="text-align:center; font-family:Verdana, Geneva, sans-serif; font-size:14px; line-height:21px;"
+                >
+                  <a
+                    href="https://www.gk-is.ru/"
+                    target="_blank"
+                    style="color:#ffffff; display:block; text-decoration:none; border:0;"
+                    target="_blank"
+                  ><img src="{{url}}footerlogo.jpg"/></a>
+
+                </td>
+              </tr>
+
+            </table>
+          </td>
+        </tr>
+      </table>
+    </td>
+
+  </tr>
+  <tr>
+    <td>
+      <table
+        align="center"
+        width="100%"
+        border="0"
+        cellpadding="0"
+        cellspacing="0"
+      >
+        <tr>
+          <td height="15"></td>
+        </tr>
+
+      </table>
+    </td>
+
+  </tr>
+
+
+</table>
+</body>
+</html>

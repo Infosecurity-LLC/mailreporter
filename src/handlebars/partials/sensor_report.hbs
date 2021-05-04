@@ -1,0 +1,153 @@
+<!--section headers-->
+
+{{#if description}}
+  <tr>
+    <td>
+      <table
+        align="center"
+        width="590"
+        border="0"
+        cellpadding="0"
+        cellspacing="0"
+        style="background:#ffffff;"
+      >
+        <tr>
+          <td>
+            <table
+              align="center"
+              width="590"
+              border="0"
+              cellpadding="0"
+              cellspacing="0"
+            >
+
+              <tr>
+                <td
+                  valign="top"
+                  cellpadding="0"
+                  cellspacing="0"
+                  border="0"
+                  height="30"
+                  width="25"
+                  style=" padding: 0px; margin:0px; text-align:left; font-family:Verdana, Geneva, sans-serif; font-size:14px;  line-height:21px;"
+                >
+
+                </td>
+                <td
+                  valign="top"
+                  cellpadding="0"
+                  cellspacing="0"
+                  border="0"
+                  height="30"
+                  width="15"
+                  style="background:#3da1dc; padding: 0px; margin:0px; text-align:left; font-family:Verdana, Geneva, sans-serif; font-size:14px;  line-height:21px;"
+                >
+
+                </td>
+
+                <td
+                  valign="top"
+                  cellpadding="0"
+                  cellspacing="0"
+                  border="0"
+                  height="30"
+                  width="10"
+                  style=" padding: 0px; margin:0px; text-align:left; font-family:Verdana, Geneva, sans-serif; font-size:14px;  line-height:21px;"
+                >
+
+                </td>
+                <td
+                  valign="middle"
+                  width="540"
+                  style="text-align:left; font-family:Verdana, Geneva, sans-serif; font-size:14px; line-height:21px; color:#3da1dc;"
+                >
+                  <span><b>{{description}}</b></span>
+                </td>
+
+              </tr>
+
+
+              {{#>septr10}}{{/septr10}}
+
+            </table>
+          </td>
+        </tr>
+      </table>
+    </td>
+
+  </tr>
+{{/if}}
+<tr>
+  <td>
+    <table
+      align="center"
+      width="590"
+      border="0"
+      cellpadding="0"
+      cellspacing="0"
+      style="background:#ffffff;"
+    >
+      <tr>
+        <td width="25">
+          &nbsp;
+        </td>
+        <td>
+          <table
+            align="center"
+            width="540"
+            border="0"
+            cellpadding="0"
+            cellspacing="0"
+            style="border: 1px solid #ececec; border-collapse: collapse; background:#f6f6f6;"
+          >
+            <tr>
+              <td
+                valign="top"
+                style="border: 1px solid #ececec; padding: 5px 0 5px 5px; text-align:left; font-family:Verdana, Geneva, sans-serif; font-size:14px;  line-height:21px;"
+              ><b>Host name</b></td>
+              <td
+                valign="top"
+                style="border: 1px solid #ececec; padding: 5px 0 5px 5px; text-align:left; font-family:Verdana, Geneva, sans-serif; font-size:14px;  line-height:21px;"
+              ><b>IP адрес</b></td>
+              <td
+                valign="top"
+                style="border: 1px solid #ececec; padding: 5px 0 5px 5px; text-align:left; font-family:Verdana, Geneva, sans-serif; font-size:14px;  line-height:21px;"
+              ><b>Сработок</b></td>
+            </tr>
+            {{#forEach report}}
+
+
+              <tr>
+                <td
+                  valign="top"
+                  width="170"
+                  style=" border: 1px solid #ececec; padding: 5px 0 5px 5px; text-align:left; font-family:Verdana, Geneva, sans-serif; font-size:14px;  line-height:21px;"
+                >
+                  <span>{{comp_name}}.{{comp_dom}}</span></td>
+                <td
+                  valign="top"
+                  style="border: 1px solid #ececec; padding: 5px 0 5px 5px; text-align:left; font-family:Verdana, Geneva, sans-serif; font-size:14px;  line-height:21px;"
+                >
+                  <span> {{comp_ip}}</span>
+                </td>
+                <td
+                  valign="top"
+                  style="border: 1px solid #ececec; padding: 5px 0 5px 5px; text-align:left; font-family:Verdana, Geneva, sans-serif; font-size:14px;  line-height:21px;"
+                >
+                  <span>{{count}}</span>
+                </td>
+              </tr>
+
+            {{/forEach}}
+
+          </table>
+        </td>
+        <td width="25">
+          &nbsp;
+        </td>
+      </tr>
+    </table>
+  </td>
+</tr>
+{{#> separator10}}
+{{/separator10}}
